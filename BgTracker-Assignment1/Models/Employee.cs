@@ -12,5 +12,9 @@ namespace BgTracker_Assignment1.Models
         public int RegistrationNumber { get; set; }
 
         public ICollection<Sale> Sales { get; set; }
+        public Employee()
+        {
+            Sales = new List<Sale>();
+        }
     }
 }

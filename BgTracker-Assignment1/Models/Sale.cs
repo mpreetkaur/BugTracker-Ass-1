@@ -9,12 +9,16 @@ namespace BgTracker_Assignment1.Models
     {
         public int Id { get; set; }
         public DateTimeOffset Date { get; set; }
+
         public Customer Customer { get; set; }
         public StoreLocation StoreLocation { get; set; }
+
         public string EmployeeId { get; set; }
         public Employee Employee { get; set; }
+
         public string EmployeeToApproveId { get; set; }
         public Employee EmployeeToApprove { get; set; }
+
         public ICollection<Product> Products { get; set; }
 
         public Sale()

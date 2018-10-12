@@ -10,5 +10,11 @@ namespace BgTracker_Assignment1.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
+        public ICollection<Sale> Sales { get; set; }
+
+        public Customer()
+        {
+            Sales = new List<Sale>();
+        }
     }
 }
